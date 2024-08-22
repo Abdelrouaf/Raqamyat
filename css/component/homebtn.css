@@ -1,0 +1,16 @@
+.header-button a {
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(225deg, #0093DE 20%, #3C6FAE 70%);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    position: relative;
+    z-index: 100;
+}
+
+.header-button a:hover {
+    background: linear-gradient(80deg, #0093DE 20%, #3C6FAE 70%);
+}

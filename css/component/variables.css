@@ -1,0 +1,32 @@
+:root {
+    --blue-color: #027AB7;
+    --gray-color: #656565;
+    --pink-color: #FF6B7E;
+}
+
+.preview h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.preview h2 .first-word {
+    display: block;
+}
+
+.preview h2 .line-blue {
+    position: relative;
+    z-index: 1;
+}
+
+.preview h2 .line-blue::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background-image: url(../../images/Line\ 4545.svg);
+    background-size: cover;
+    width: 50%;
+    height: 40%;
+    z-index: -1;
+}

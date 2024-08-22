@@ -1,0 +1,98 @@
+@media (max-width: 768px) {
+    .header .navbar-collapse {
+        background-color: #fff;
+        padding: 20px 0;
+    }
+
+    .header .navbar .navbar_links {
+        width: 100%;
+    }
+
+    .header .navbar_logo {
+        position: absolute;
+        top: 0;
+        left: 40%;
+    }
+
+    .header .header-button {
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+
+    .header .navbar_links ul li {
+        margin: 0 30px;
+    }
+
+    .header .navbar-collapse ul li:first-child a::before {
+        left: 0;
+    }
+
+    .header .navbar-collapse ul li:not(:nth-child(1)) a:before {
+        left: -10px;
+    }
+
+    .header .navbar-collapse ul li:not(:nth-child(1)) a:after {
+        left: 0;
+        
+    }
+
+    .about .row {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 450px) {
+    h1, h2 {
+        font-size: 34px !important;
+    }
+
+    .header .navbar_logo {
+        position: absolute;
+        top: 0;
+        left: 25%;
+    }
+
+    .header .header-button {
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+
+    .home .images,
+    .footer .footer-subscribe {
+        display: none !important;
+    }
+
+    .about .cash-pay {
+        padding: 0 !important;
+        margin: 0 !important;
+        position: relative !important;
+    }
+
+    .about .image-info {
+        display: none !important;
+    }
+
+    .services .preview {
+        display: block !important;
+    }
+
+    .services .preview p {
+        width: 100% !important;
+    }
+
+    .footer .footer-links {
+        text-align: center;
+    }
+
+    .footer .footer-links .company-info {
+        margin-bottom: 25px;
+    }
+
+    .footer .footer-links .company-info a img {
+        width: 45% !important;
+    }
+
+}

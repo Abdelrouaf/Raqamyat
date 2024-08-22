@@ -1,0 +1,84 @@
+.header {
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header .navbar-collapse {
+    flex-grow: 0;
+}
+
+.header .navbar-collapse ul li {
+    margin-right: 15px;
+}
+
+.header .navbar-collapse ul li:not(:nth-child(1)) a {
+    color: var(--gray-color);
+    text-transform: capitalize;
+    font-size: 19px;
+    position: relative;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.header .navbar-collapse ul li:not(:nth-child(1)) a:hover {
+    color: var(--blue-color);
+}
+
+.header .navbar-collapse ul li:first-child a {
+    color: var(--blue-color);
+    text-transform: capitalize;
+    position: relative;
+}
+
+.header .navbar-collapse ul li:first-child a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    bottom: 3px;
+    left: 30%;
+    background-color: var(--pink-color);
+}
+
+.header .navbar-collapse ul li:not(:nth-child(1)) a:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: -5px;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.header .navbar-collapse ul li:not(:nth-child(1)) a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 3px;
+    left: 30%;
+    background-color: var(--pink-color);
+    z-index: -1;
+    z-index: 1;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.header .navbar-collapse ul li:not(:nth-child(1)) a:hover:after {
+    width: 20px;
+}
